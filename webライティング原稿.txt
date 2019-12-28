@@ -1,0 +1,108 @@
+【headタグ内】
+
+titleタグ：小学生のプログラミング・スクール「スクーキッズ」
+
+【bodyタグ内】
+①headerタグ
+id名topを指定
+h1タグ：小学生のプログラミング・スクール「スクーキッズ」
+pタグ：imgタグを内包。schookds.svgロゴ
+divタグ：無料体験してみよう
+class名btnを指定。コンテンツ内、id名contactUsへのリンクを貼る。
+
+②navタグ
+1.ソーシャルブックマークのリスト
+	リストタグ1行づつにアンカータグを入れ、その中にSNSアイコンを4つ設置。
+	facebook.svg
+	twitter.svg
+	pinta.svg
+	line.svg
+	ulタグにid名snsを指定
+2.スクーWebキャンパスのロゴ
+	h2タグ内に画像を読み込む
+3.グローバルナビゲーション
+	ulタグにid名menuを指定
+	4つのリストにaタグを入れ、それぞれページ内のコンテンツにリンクを貼る。文言は以下の4つ。それぞれのli>a内に入れる。
+	カリキュラム(aタグのリンク先は#course)
+	教室(aタグのリンク先は#room)
+	アクセス(aタグのリンク先は#accsess)
+	お問い合わせ(aタグのリンク先は#contactUs)
+
+③mainタグ
+1.最初のarticle（本文）タグにはid名courseを指定。
+	h2タグ：楽しくロジカルシンキングを身につける
+	pタグ：対象は小学校1年生から6年生まで。パソコンやスマートフォンをほとんど触ったことが無いというお子様でも大丈夫！
+指導員は情報系大学生のお兄さん・お姉さん。楽しく遊んでいるうちにプロジカルシンキングが身につきます。
+		1)sectionタグ
+		figureタグ内にimgタグで画像を配置：course1.png
+		h3タグ：iPhoneアプリコース
+		pタグ：マウス操作だけでできるScratchを使う初級から、Xcodeを使ったアプリ開発をする上級まで、自分でゲームを作りながら自然にプログラムのしくみを学んでいきます。
+		2)sectionタグ
+		figureタグ内にimgタグで画像を配置：course2.png
+		h3タグ：Webサービスコース
+		pタグ：HTML、CSS、JavaScript等のプログラミング言語を用いて、インターネットブラウザ上で動作するアプリを開発します。テキストエディターというソフトを使います。
+		3)sectionタグ
+		figureタグ内にimgタグで画像を配置：course3.png
+		h3タグ：ロボットコース
+		pタグ：簡単なソフトを使ってロボットを動かす初級から、プログラミングにモーションセンサや加速度センサを組み合わせ、自由自在に動くロボットを作る上級コースまであります。
+2.2つめのarticle（本文）タグにはid名roomを指定。
+	h2タグ：テクノロジーと遊びがいっぱいの教室
+		1)sectionタグ
+		figureタグ内にimgタグで画像を配置：room1.jpg
+		h3タグ：グループ制作
+		pタグ：明るく楽しい教室で遊んでいるうちに自然にプログラミングの基礎と、ロジカルシンキングを身につけて行ける環境です。
+		2)sectionタグ
+		figureタグ内にimgタグで画像を配置：room2.jpg
+		h3タグ：メンターの先生
+		pタグ：先生はやさしい大学生のお兄さん・お姉さんです。一人一人の進み具合に合わせて教えていきます。
+		3)sectionタグ
+		figureタグ内にimgタグで画像を配置：room3.jpg
+		h3タグ：作ったアプリの発表
+		pタグ：作った作品を発表します。みんな集まってワイワイ楽しいひと時です。先生が一人一人に評価のコメントをします。
+3.sectionタグにはid名contactUsを指定。
+	h2；お問い合わせフォーム
+	p：各コースは無料体験できます。ご希望の日時を添えてこちらのフォームからお申込みください。
+	formタグの中にtableタグを入れる。
+	tableタグの中には、tr（table行）タグが3つ、それぞれのtrの中には、thタグとtdタグが1つづつ。
+	最初のtrタグの中
+		th：お名前：
+		td：<input type="text" name="name" maxlength="20">
+	2つ目のtrタグの中：お問い合わせ内容：
+		th：<textarea name="otoiawase" cols="20"></textarea>
+	3つ目のtrタグの中：
+		th：空
+		td：<input type="submit" value="送信">
+
+④asideタグ
+h2タグ：スクーキッズ」へのアクセス
+（h2は沢山あるのでid名accsessを指定）
+sectionタグ：
+	h3：道玄坂に面しているのでお子様の通学も安全です
+	p：渋谷駅からマークシティー沿いに進むと、道元坂上の交番が見えます。 交番の前の道を渡り、道なりに進むと第一暁ビルがあります。その5階がスクーキッズです。
+	div：class名accessmapを指定。中に、以下のgoogleMap吐き出しコードを入れる。
+	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6483.597555249009!2d139.697088!3d35.657329!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b55e747f847%3A0xb126796d646801d4!2z5pel5pysLCDjgJIxNTAtMDA0MyDmnbHkuqzpg73muIvosLfljLrpgZPnjoTlnYLvvJHkuIHnm67vvJHvvJniiJLvvJkg56ys5LiA5pqB44OT44Or!5e0!3m2!1sja!2sus!4v1431009425310"></iframe>
+
+⑤footerタグ
+1つ目のsectionタグ：
+	h4タグ：
+	ulタグ：li>aを4つ内包
+		コース
+		ワークショップ
+		企業研修
+		特定商取引に関する表示
+2つ目のsectionタグ：
+	h4タグ：
+	ulタグ：li>aを4つ内包
+		よくあるご質問
+		会場案内
+		利用規約
+		運営会社
+	smallタグ：&copy;2009 - 2015 schoo
+
+⑥divタグ：^
+(上に戻るボタンにする。id名gototopと指定)
+	aタグ：#topへのリンク
+
+※指定外のaタグのリンクは全て#
+
+
